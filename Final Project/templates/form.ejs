@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Form</title>
+    <style>
+      .style {
+        font-style: italic;
+      }
+      .fancy {
+        margin: 50px;
+      }
+
+      .fancy-button {
+        margin: 50px;
+        margin-left: 100px;
+        align-items: center;
+        background-color: #0a66c2;
+        border: 0;
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 20px;
+        max-width: 480px;
+        min-height: 40px;
+        min-width: 0px;
+        overflow: hidden;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        touch-action: manipulation;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+          color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+      }
+
+      .fancy-button:hover,
+      .fancy-button:focus {
+        background-color: #16437e;
+        color: #ffffff;
+      }
+
+      .fancy-button:active {
+        background: #09223b;    
+        color: rgb(255, 255, 255, 0.7);
+      }
+
+      .fancy-button:disabled {
+        cursor: not-allowed;
+        background: rgba(0, 0, 0, 0.08);
+        color: rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Input your requested query in this text area.</h1>
+    <div class="style">
+      <form method="post">
+        <strong>Please type your prompt in the following text box. <br>(PLEASE ONLY CLICK THE SUBMIT BUTTON ONCE, THE API MAY TAKE A FEW SECONDS TO GENERATE A RESPONSE)</strong>
+        <br />
+        <br />
+        <textarea name="prompt" id="prompt" cols="50" rows="10"></textarea>
+        <br />
+        <button class="fancy-button" type="submit">Submit prompt</button>
+      </form>
+    </div>
+  </body>
+</html>
